@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace MessageChain
 {
-    struct Message
+    [Serializable]
+    public struct Message
     {
-        string m_Origin;
-        string m_Target;
-        string m_Message;
-        string m_Timestamp;
+        public string m_Origin;
+        public string m_Target;
+        public string m_Message;
+        public string m_Timestamp;
 
         public Message(string m_Origin, string m_Target, string m_Message) : this()
         {

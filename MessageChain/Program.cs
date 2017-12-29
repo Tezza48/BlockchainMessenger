@@ -25,6 +25,9 @@ namespace MessageChain
             chain.AddBlock(new Message[] { messagePool.Dequeue(), messagePool.Dequeue() });
             chain.AddBlock(new Message[] { messagePool.Dequeue(), messagePool.Dequeue(), messagePool.Dequeue() });
             chain.AddBlock(new Message[] { messagePool.Dequeue(), messagePool.Dequeue() });
+
+            Console.WriteLine();
+
             Console.Write(chain.ToString());
 
             Console.ReadKey();
